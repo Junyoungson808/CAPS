@@ -1,10 +1,10 @@
 'use strict';
 
-const eventPool = require('./eventPool');
-const driverHandler = require('./driver/driver');
-const vendorHandler = require('./vendor/vendor');
-const Chance = require('chance');
+const eventPool = require('./src/eventPool');
+const driverHandler = require('./src/driver/driver');
+const vendorHandler = require('./src/vendor/vendor');
 
+const Chance = require('chance');
 const chance = new Chance();
 
 eventPool.on('PICKUP', driverHandler);
@@ -20,6 +20,7 @@ setInterval(() => {
   };
 
   console.log('---------------------New Interval Begins--------------------');
-  eventPool.emit('Pickup', {order});
-  eventPool.emit('Delivery', {order});
-},8000);
+  eventPool.emit('PICKUP', {order});
+  eventPool.emit('DELIVERY', {order});
+  eventPool.emit('TRANSIT', {order});
+},3000);

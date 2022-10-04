@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Junyoungson808/caps/issues"
   },
-  "homepage": "https://github.com/Junyoungson808/caps#readme"
+  "homepage": "https://github.com/Junyoungson808/caps#readme",
+  "dependencies": {
+    "chance": "^1.1.8"
+  }
 }
