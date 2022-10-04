@@ -1,0 +1,20 @@
+{
+  "name": "caps",
+  "version": "1.0.0",
+  "description": "lab 11",
+  "main": "system.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junyoungson808/caps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Junyoungson808/caps/issues"
+  },
+  "homepage": "https://github.com/Junyoungson808/caps#readme"
+}
